@@ -5,11 +5,11 @@
 <p><%=@pirate.height%></p>
 <p><%=@pirate.weight%></p>
 <h2>Display your first ship here</h2>
-<p><% @ships.each do |ship|%>
-<%=ship.name%>
-<%=ship.type%>
-<%=ship.booty%>
-<%end%></p>
+<ul><% @ships.each do |ship|%>
+<li><%=ship.name%></li>
+<li><%=ship.type%></li>
+<li><%=ship.booty%></li>
+<%end%></ul>
 </body>
 
 </html>
